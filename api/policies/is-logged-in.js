@@ -19,6 +19,10 @@ module.exports = async function (req, res, proceed) {
     return proceed();
   }
 
+  if (req.originalUrl == "/login") {
+    return proceed();
+  }
+
   //--•
   // Otherwise, this request did not come from a logged-in user.
   return res.unauthorized();
