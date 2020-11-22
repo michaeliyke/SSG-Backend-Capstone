@@ -1,0 +1,18 @@
+
+body {
+    background-color: #ebebeb;
+}
+section[role="login"] {
+    background-color: #ffffff;
+    margin: 10vh auto 0;
+    padding: 3em;
+    width: 40%;
+}
+form .form-info-e {
+    display: flex;
+    justify-content: space-between;
+}
+form .form-control-e {
+    display: flex;
+    flex-direction: column;
+}
