@@ -98,10 +98,10 @@ input[type="submit"] {
     font-weight: 700;
     padding: 1em 3em;
     text-transform: uppercase;
-    transition: all;
+    transition: background-color 0s ease 0s, color 300ms linear 0s;
 }
 input[type="submit"]:hover {
-    background-color: #ff8291;
-    color: #ff4b5a;
+    background-color: #e44973;
+    color: #444;
     cursor: pointer;
 }

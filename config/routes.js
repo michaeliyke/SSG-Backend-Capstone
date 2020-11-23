@@ -10,7 +10,13 @@
 
 module.exports.routes = {
   'GET /': {
-    action: 'view-homepage-or-redirect'
+    action: 'home'
+  },
+  'GET /help': {
+    action: 'help'
+  },
+  'GET /contact': {
+    action: 'contact'
   },
   'GET /login': {
     action: 'access/view-login'
