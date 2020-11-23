@@ -53,7 +53,7 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
 
-  migrate: "alter", //Add only neccessary parts
+  migrate: "drop", //Add only neccessary parts
   
 
 
