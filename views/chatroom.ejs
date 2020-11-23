@@ -11,8 +11,7 @@
   <div class="twelve wide column">
 
     <!-- Chat Messages -->
-    [ TODO chat-messages ]
-
+    <% include partials/chat-messages.ejs %>
     <hr>
 
     <!-- Chat Post -->
@@ -24,5 +23,6 @@
 <script type="text/javascript">
 window.onload = function() {
   loadUsers();
+  loadMessages();
 }
 </script>
