@@ -24,5 +24,10 @@ module.exports.routes = {
   'GET /signup': {
     action: 'access/view-signup'
   },
-
+  '/profile': {
+   view: 'profile'
+  },
+  '/chat': {
+    view: 'chatroom'
+  }
 };
