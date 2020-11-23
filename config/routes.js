@@ -25,7 +25,8 @@ module.exports.routes = {
     action: 'access/view-signup'
   },
   '/profile': {
-   view: 'profile'
+    controller: 'UserController',
+    action: 'render' //render is a method that lives within UserController
   },
   '/chat': {
     view: 'chatroom'
