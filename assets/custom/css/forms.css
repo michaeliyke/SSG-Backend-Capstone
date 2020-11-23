@@ -1,0 +1,107 @@
+
+body {
+    background-color: #ebebeb;
+    font-family: helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+}
+section[role="login"] {
+    background-color: #ffffff;
+    margin: 10vh auto 0;
+    padding: 3em;
+    width: 40%;
+}
+form .form-info-e {
+    display: flex;
+    justify-content: space-between;
+}
+form .form-control-e {
+    display: flex;
+    flex-direction: column;
+}
+section[role="signup"] {
+    background-color: #ffffff;
+    margin: 10vh auto 0;
+    width: 50%;
+}
+section[role="signup"] header {
+    background: #1a1a1a none repeat scroll 0 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #ffffff;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-align: center;
+}
+section[role="signup"] header h1 {
+    font-size: 1.5rem;
+}
+section[role="signup"] form {
+    padding-bottom: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+section.form-control-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+section.form-control-wrapper .form-controls-x {
+    display: flex;
+    flex-basis: 79%;
+}
+section.form-control-wrapper .form-controls-x .control-x {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    flex-grow: 1;
+}
+.name-control, .password-control {
+    margin-right: 1em;
+}
+.control-x label {
+    color: #999999;
+    font-size: 0.8rem;
+    margin-top: 0.4em;
+}
+section.form-control-wrapper span {
+    color: #555555;
+}
+.form-control-info-x {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.terms-agreement {
+    align-items: baseline;
+    display: inline-flex;
+    flex-basis: 40%;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+}
+.terms-agreement label {
+    display: inline-block;
+    text-align: right;
+}
+.already-have-account {
+    display: inline-block;
+    text-align: right;
+}
+section.terms-agreement-control {
+    font-size: 0.8rem;
+}
+input[type="submit"] {
+    background-color: #ff4b5a;
+    border: medium none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-weight: 700;
+    padding: 1em 3em;
+    text-transform: uppercase;
+    transition: all;
+}
+input[type="submit"]:hover {
+    background-color: #ff8291;
+    color: #ff4b5a;
+    cursor: pointer;
+}

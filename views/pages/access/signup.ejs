@@ -1,13 +1,73 @@
+<link rel="stylesheet" type="text/css" href="/custom/css/forms.css" />
+
 <section role="signup">
   <header>
     <h1>ACCOUNT REGISTRATION FORM</h1>
   </header>
   <form action="/signup" method="POST" enctype="">
     <section class="form-control-wrapper">
-    <span></span>
+    <span>Name</span>
       <div class="form-controls-x">
-        
+        <div class="control-x name-control">
+          <label for="first-name">First Name</label>
+        <input type="text" name="firstname" id="first-name" />
+        </div>
+        <div class="control-x">
+          <label for="last-name">Last Name</label>
+          <input type="text" name="lastname" id="last-name" />
+        </div>
       </div>
     </section>
+
+    <section class="form-control-wrapper">
+      <span>Email</span>
+      <div class="form-controls-x">
+      <div class="control-x">
+        <label for="email-address"></label>
+        <input type="text" name="account-email" id="email-address">
+      </div>
+      </div>
+    </section>
+
+    <section class="form-control-wrapper">
+      <span>Username</span>
+      <div class="form-controls-x">
+      <div class="control-x">
+        <label for="username"></label>
+        <input type="text" name="account-username" id="username" />
+      </div>
+      </div>
+    </section>
+
+    <section class="form-control-wrapper">
+      <span>Password</span>
+      <div class="form-controls-x">
+      <div class="control-x password-control">
+        <label for="password">Your Password</label>
+        <input type="password" name="account-password" id="password" />
+      </div>
+      <div class="control-x">
+        <label for="repeat-password">Repeat Password</label>
+        <input type="password" name="re-password" id="repeat-password" />
+      </div>
+      </div>
+    </section>
+
+    <section class="form-control-wrapper terms-agreement-control">
+      <div class="form-control-info-x">
+      <div class="terms-agreement">
+        <label for="terms">I agree to the <a href="/terms">terms </a>of service</label>
+        <input type="checkbox" name="terms-agreement" id="terms" />
+      </div>
+      <div class="already-have-account">
+        <span>Already have an <a href="/login">account?</a></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-control-wrapper">
+      <input type="submit" value="Create Account" />
+    </section>
+
   </form>
 </section>
