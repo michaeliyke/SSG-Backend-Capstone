@@ -26,6 +26,7 @@
 <script type="text/javascript">
 
 function loadMessages() {
+  console.log("LoadMessages is called");
   // Load existing chat messages
   io.socket.get('/chatMessage', function(messages, response) {
     renderChatMessages(messages);

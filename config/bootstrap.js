@@ -19,52 +19,53 @@ module.exports.bootstrap = async function(cb) {
     if (messageCount > 0) {
       return; // don't repeat messages
     }
-
-    await User.createEach([
-      {
-        name: 'John Wayne',
-        email: 'johnnie86@gmail.com',
-        avatar: 'https://randomuser.me/api/portraits/men/83.jpg',
-        location: 'Mombasa',
-        bio: 'Spends most of my time at the beach'
-      },
-      {
-        name: 'Peter Quinn',
-        email: 'peter.quinn@live.com',
-        avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
-        location: 'Langley',
-        bio: 'Rather not say'
-      },
-      {
-        name: 'Jane Eyre',
-        email: 'jane@hotmail.com',
-        avatar: 'https://randomuser.me/api/portraits/women/94.jpg',
-        location: 'London',
-        bio: 'Loves reading motivation books'
-      },
-    ]);
-
+    /*
+        await User.createEach([
+          {
+            name: 'John Wayne',
+            email: 'johnnie86@gmail.com',
+            avatar: 'https://randomuser.me/api/portraits/men/83.jpg',
+            location: 'Mombasa',
+            bio: 'Spends most of my time at the beach'
+          },
+          {
+            name: 'Peter Quinn',
+            email: 'peter.quinn@live.com',
+            avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+            location: 'Langley',
+            bio: 'Rather not say'
+          },
+          {
+            name: 'Jane Eyre',
+            email: 'jane@hotmail.com',
+            avatar: 'https://randomuser.me/api/portraits/women/94.jpg',
+            location: 'London',
+            bio: 'Loves reading motivation books'
+          },
+        ]);
+    */
     let users = await User.find();
+    // console.clear();
     if (users.length >= 3) {
-      console.log("Generating messages...")
-
+      console.log("Generating messages...");
+      const [user1, user2, user3] = users;
       let msg1 = await ChatMessage.create({
         message: 'Hey Everyone! Welcome to the community!',
-        createdBy: users[1]
+        createdBy: user1.id
       });
-      console.log("Created Chat Message: " + msg1.id);
+      console.log("Created Chat Message: " + msg1);
 
       let msg2 = await ChatMessage.create({
         message: "How's it going?",
-        createdBy: users[2]
+        createdBy: user2.id
       });
-      console.log("Created Chat Message: " + msg2.id);
+      console.log("Created Chat Message: " + msg2);
 
       let msg3 = await ChatMessage.create({
         message: 'Super excited!',
-        createdBy: users[0]
+        createdBy: user3.id
       });
-      console.log("Created Chat Message: " + msg3.id);
+      console.log("Created Chat Message: " + msg3);
 
     } else {
       console.log('skipping message generation');

@@ -12,7 +12,6 @@ module.exports.policies = {
 
 
   // Bypass the `is-logged-in` policy for:
-  '/': true,
   'help': true,
   'contact': true,
   'access/*': true,
