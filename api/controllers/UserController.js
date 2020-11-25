@@ -14,5 +14,5 @@ module.exports = {
     } catch (err) {
       response.serverError(err);
     }
-  }
+  },
 };

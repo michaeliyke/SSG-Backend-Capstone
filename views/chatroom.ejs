@@ -13,10 +13,8 @@
     <!-- Chat Messages -->
     <% include partials/chat-messages.ejs %>
     <hr>
-
+<% include partials/chat-post.ejs %>
     <!-- Chat Post -->
-    [ TODO chat-post ]
-
   </div>
 </div>
 </div>
@@ -24,5 +22,6 @@
 window.onload = function() {
   loadUsers();
   loadMessages();
+  activateChat();
 }
 </script>
